@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { BtnContainer } from './components/btn-container/BtnContainer';
 import './App.css';
+import { Result } from './components/Result/Result';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav></nav>
+      <div className="container">
+        <div className="text">Prank your people with our calculator</div>
+        <div className="calc-main-div">
+          <Result />
+          <BtnContainer />
+        </div>
+      </div>
     </div>
   );
 }

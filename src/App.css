@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+* {
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background: #cf95a3;
+  width: 100vw;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background: linear-gradient(
+    180deg,
+    #828db2 0%,
+    rgba(110, 128, 154, 0.526042) 47.4%,
+    rgba(3, 14, 31, 0.32) 100%
+  );
+  width: 100vw;
   min-height: 100vh;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+article div {
+  position: absolute;
+  width: 503.37px;
+  height: 207.74px;
+
+  font-family: 'Peralta', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center;
+
+  color: #140808;
+
+  opacity: 0.7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc-main-div {
+  width: 500px;
+  background: white;
+  margin-top: 5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25);
 }
+
+.items {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-areas:
+    'ac c m divide'
+    'seven eight nine multiply'
+    'four five six add'
+    'one two three minus'
+    'zero zeroo equal equal'; */
+
+  border-radius: 10px;
+  gap: 1rem;
+  width: 100%;
+}
+
+.items > * {
+  height: 50px;
+  border: 0 solid rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.items > *:hover {
+  background: red;
+}
+
+.screen {
+  background: #f3e3e3;
+  border-radius: 5px;
+  line-height: 3rem;
+  padding: 1rem;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 36px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  /* margin-right: 20px; */
+}
+
+.equalTo {
+  grid-column: 2 span;
+}
+
+/* 
+.ac {
+  grid-area: ac;
+  background: white;
+}
+.c {
+  grid-area: c;
+}
+.m {
+  grid-area: m;
+}
+.divide {
+  grid-area: divide;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.multiply {
+  grid-area: multiply;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.add {
+  grid-area: add;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.minus {
+  grid-area: minus;
+}
+.zero {
+  grid-area: zero;
+}
+.zeroo {
+  grid-area: zeroo;
+}
+.equal {
+  grid-area: equal;
+} */
