@@ -1,9 +1,11 @@
 import React from 'react';
 
-export const Result = () => {
+export const Result = ({ result, setOff }) => {
+  const clsNm = setOff ? 'screen screenOff' : 'screen';
+
   return (
-    <div id="result" className="screen">
-      0.00
+    <div id="result" className={clsNm}>
+      {result || '0.00'}
     </div>
   );
 };

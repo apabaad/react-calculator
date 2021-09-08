@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const BtnContainer = () => {
+export const BtnContainer = ({ handleOnClick, offButton }) => {
   const btnItems = [
     'AC',
     'C',
-    ' Off',
+    offButton,
     '/',
     7,
     8,
@@ -23,9 +23,6 @@ export const BtnContainer = () => {
     '=',
   ];
 
-  const handleOnClick = (val) => {
-    console.log(val);
-  };
   return (
     <div>
       <div className="items">
